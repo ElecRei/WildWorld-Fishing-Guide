@@ -6,6 +6,6 @@ A month by month guide for fishing in Animal Crossing: Wild World
 ### Current Tasks
 
 * ~~Gather fishing data in spreadsheet~~
-** Make sure data is accurate
+..* Make sure data is accurate
 * Organize data into months
 * Build out basic HTML layout for guide (preferably in a calendar/bulliten format)
