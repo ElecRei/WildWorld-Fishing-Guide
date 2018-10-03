@@ -18,7 +18,7 @@ Thanks and have a great day! :)
 
 * ~~Gather fishing data in spreadsheet~~
   * ~~Make sure data is accurate~~
-* ~~Organize data into months
+* ~~Organize data into months~~
 * Build out basic HTML layout for guide (preferably in a calendar/bulliten format)
   * Graphical style to match Animal Crossing series or Wild World graphics
 
