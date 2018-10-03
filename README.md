@@ -15,4 +15,5 @@ A month by month guide for fishing in Animal Crossing: Wild World
 ### Important Links
 
 **Fishing Data Googlesheets**
-https://docs.google.com/spreadsheets/d/1lalnu802t9Re9kMjrwQy4HkwQAFxvcTrKKzK87K5zJo/edit?usp=sharing
+https://docs.google.com/spreadsheets/d/1lalnu802t9Re9kMjrwQy4HkwQAFxvcTrKKzK87K5zJo/edit?usp=sharing  
+*Updated 10/03/18*
