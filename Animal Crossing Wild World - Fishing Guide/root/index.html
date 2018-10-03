@@ -73,8 +73,14 @@
             
             console.log(fishList[0]);
             
-                for(var i=0; i <= 8; i++){
-                    $('body').append("<div>" + fishList[i].fishName + "</div>");
+                for(var i=0; i <= 15; i++){
+                    $('body').append(
+                        "<div>" + fishList[i].fishName + "</div>" +
+                        "<div>" + fishList[i].fishLoc + "</div>" +
+                        "<div>" + fishList[i].fishTime + "</div>" +
+                        "<div>" + fishList[i].fishAvbl + "</div>" +
+                        "<br><br><hr>"
+                    );
                 }
             
         </script>
