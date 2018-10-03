@@ -26,5 +26,5 @@ Thanks and have a great day! :)
 ### Important Links
 
 **Fishing Data Googlesheets**
-https://docs.google.com/spreadsheets/d/16NFsjjyIcPFiZerwo5Fc6RRLgrcETTHFPXEcyd6s73o/edit?usp=sharing 
+https://docs.google.com/spreadsheets/d/16NFsjjyIcPFiZerwo5Fc6RRLgrcETTHFPXEcyd6s73o/edit?usp=sharing  
 *Updated 10/03/18*
