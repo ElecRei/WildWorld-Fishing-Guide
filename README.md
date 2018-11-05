@@ -5,6 +5,13 @@ A month by month guide for fishing in Animal Crossing: Wild World
 
 ### News
 
+#### Project Update
+###### **Posted 11/05/18**
+
+It's been awhile since I touched this project but I'm back to work some more on it. Currently I've been working on the JS list of fish which I will upload today after this README update. It contains the fish in an object list which is what will be referenced when it outputs that data based on the month selected.
+
+That's pretty much all for now but I hope to have more done within the week, hopefully the design! :relieved:
+
 #### Fish Data Update
 ###### **Posted 10/03/18**
 
