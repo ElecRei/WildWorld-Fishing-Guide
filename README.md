@@ -6,6 +6,11 @@ A month by month guide for fishing in Animal Crossing: Wild World
 ### News
 
 #### Project Update
+###### **Posted 11/07/18**
+
+Made a branch for JS + jQuery to test functions. Updated the index file to test filter by filtering fish by several that are available all year.
+
+#### Project Update
 ###### **Posted 11/06/18**
 
 Added completed object list with all the data in it and updated the index page to display the outputted data as a table.
