@@ -124,10 +124,21 @@
                         console.log(result);
                         */
                         
-                        var b = fishList.filter(x => x.fishAvbl === 'All Year');
+                        /*
+                        var b = fishList.filter(x => x.fishAvbl === 'All Year',
+                                                y => y.fishAvbl === 'Nov - Mar');
+                        console.log(b);
+                        */
+                        
+                        function filter_avbl(event) {
+                            return event.fishAvbl == "All Year" || event.fishAvbl == "Nov - Mar";
+                        }
+                        
+                        var b = fishList.filter(filter_avbl);
+                        
                         console.log(b);
                         
-                        for(var i=0; i <= b.length; i++){
+                        for(var i=0; i < b.length; i++){
                             $('#tableTwo').append(
                                 "<tr><th>" + b[i].fishName + "</th>" +
                                 "<td>" + b[i].fishLoc + "</td>" +
