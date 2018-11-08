@@ -130,11 +130,17 @@
                         console.log(b);
                         */
                         
+                        var b = fishList.filter(x => x.fishAvblEx.includes("Jan"));
+                        
+                        /*
                         function filter_avbl(event) {
-                            return event.fishAvbl == "All Year" || event.fishAvbl == "Nov - Mar";
+                            return event.fishAvbl == "All Year" || 
+                                   event.fishAvbl == "Nov - Mar" ||
+                                   event.fishAvbl == "Oct - Apr";
                         }
                         
                         var b = fishList.filter(filter_avbl);
+                        */
                         
                         console.log(b);
                         
