@@ -142,71 +142,20 @@
 
                         if(monthSelection == "Jan"){ $("#tableTwo").css("background-color", "skyblue")}
 
-                        if(monthSelection == "Feb"){ $("#tableTwo").css("background-color", "pink")}
-
                     }
 
                     if($("button").val() == "Jan"){
-
-                        /*
-                        let result = fishList.filter(fishAvbl == "All Year" && 
-                                                     fishAvbl == "Nov - Mar" &&
-                                                     fishAvbl == "Oct - Apr" &&
-                                                     fishAvbl == "Sept - Jan" &&
-                                                     fishAvbl == "Dec - Feb" &&
-                                                     fishAvbl == "Dec - Aug");
-                        console.log(result);
-                        */
-
-                        /*
-                        var b = fishList.filter(x => x.fishAvbl === 'All Year',
-                                                y => y.fishAvbl === 'Nov - Mar');
-                        console.log(b);
-                        */
-                        
-                        monthSelection = "Jan";
                         
                         filterResult = fishList.filter(x => x.fishAvblEx.includes("Jan"));
 
-                        /*
-                        function filter_avbl(event) {
-                            return event.fishAvbl == "All Year" || 
-                                   event.fishAvbl == "Nov - Mar" ||
-                                   event.fishAvbl == "Oct - Apr";
-                        }
-
-                        var b = fishList.filter(filter_avbl);
-                        */
 
                         console.log(filterResult);
 
                         outputTable();
-
-                    } else if($("button").val() == "Feb"){
                         
-                        monthSelection = "Feb";
-
-                        filterResult = fishList.filter(x => x.fishAvblEx.includes("Feb"));
-
-                        console.log(filterResult);
-
-                        outputTable();
-
                     }
 
                 }
-
-                /*
-                for(var i=0; i <= 56; i++){
-                    $('body').append(
-                        "<br><div>" + fishList[i].fishName + "</div>" +
-                        "<div>" + fishList[i].fishLoc + "</div>" +
-                        "<div>" + fishList[i].fishTime + "</div>" +
-                        "<div>" + fishList[i].fishAvbl + "</div>" +
-                        "<br><hr>"
-                    );
-                }
-                */
                     
                 
             
