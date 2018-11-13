@@ -9,10 +9,14 @@
 > 
 > Made a branch for JS + jQuery to test functions. Updated the index file to test filter by filtering fish by several that are available all year.
 
+<hr>
+
 > #### Project Update
 > ###### **Posted 11/06/18**
 > 
 > Added completed object list with all the data in it and updated the index page to display the outputted data as a table.
+
+<hr>
 
 > #### Project Update
 > ###### **Posted 11/05/18**
