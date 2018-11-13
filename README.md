@@ -5,8 +5,15 @@ A month by month guide for fishing in Animal Crossing: Wild World
 
 ### News
 
+#### Codepen Demo Built
+###### **Posted 11/13/18 - 1:55 p.m.**
+
+Here's the Codepen demo: [https://codepen.io/ElecRei/pen/wQgELQ](https://codepen.io/ElecRei/pen/wQgELQ)
+
+There's a couple changes to the code which is mostly some minor styling and a small JS/jQuery edit to display total available fish for the currently selected month.
+
 #### Project Update
-###### **Posted 11/13/18**
+###### **Posted 11/13/18 - 1:13 p.m.**
 
 Finally finished the whole functionality of the Fishing Guide, I'll put up a Codepen in a bit to show the very bare bones demo that would make a skeleton blush. Currently the **index.html** file in the **root** folder is the most current version as of typing. To summarize everything though:
 
