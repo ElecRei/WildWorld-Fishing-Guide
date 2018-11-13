@@ -35,7 +35,7 @@ So some tasks for today:
 
 Thanks for reading and have a great day! :yum::+1:
 
-
+#### [Click here for older updates](https://github.com/ElecRei/WildWorld-Fishing-Guide/blob/master/updates-archive.md)
 
 ---
 
