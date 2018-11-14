@@ -10,6 +10,8 @@ A month by month guide for fishing in Animal Crossing: Wild World
 
 Small update to let anyone know that I'm currently working on the design/layout of the page now. Right now I'm looking over the screens for Animal Crossing: Wild World to get ideas of how to go about the look of the guide. Will add new reference images when I come across them and maybe some rough sketches.
 
+EDIT: [Added new reference images in Design](https://github.com/ElecRei/WildWorld-Fishing-Guide/tree/Design/source/reference%20images)
+
 #### Codepen Demo Built
 ###### **Posted 11/13/18 - 1:55 p.m.**
 
