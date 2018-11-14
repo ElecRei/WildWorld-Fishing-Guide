@@ -58,13 +58,7 @@
                     /* PAGE STYLING 
                     ============= */
                     
-                        #tableOne {
-                            background: orange;
-                        }
-                
-                        #tableTwo {
-                            background: skyblue;
-                        }
+                        
                     
                     /* ========== */
                     
@@ -81,83 +75,108 @@
             </script>
         
             <!-- Project List -->
-            <script type="text/javascript" src="js/fishList.js"></script>
+            <script type="text/javascript" src="../js/fishList.js"></script>
             
     </head>
     
     
     <body>
         
-        <button type="button" onclick="monthFunc()" value="Jan">January</button>
-        <button type="button" onclick="monthFunc()" value="Feb">February</button>
+        <div id="btnBar">
         
-        <table id="tableTwo"></table>
-        
-        <table id="tableOne">
+            <button type="button" value="Jan">January</button>       
+
+            <button type="button" value="Feb">February</button>
+
+            <button type="button" value="Mar">March</button>
+
+            <button type="button" value="Apr">April</button>
+
+            <button type="button" value="May">May</button>
+
+            <button type="button" value="Jun">June</button>
+
+            <button type="button" value="Jul">July</button>
+
+            <button type="button" value="Aug">August</button>
+
+            <button type="button" value="Sept">September</button>
+
+            <button type="button" value="Oct">October</button>
+
+            <button type="button" value="Nov">November</button>
+
+            <button type="button" value="Dec">December</button>
             
-        </table>
+        </div>
+        
+        <hr>
+        
+        <h2 id="titleOutput"></h2>
+        
+            <table id="tableTwo"></table>
         
         <script>
             
             console.log(fishList[0]);
-            
-                
-            
-                for(var i=0; i < 56; i++){
-                    $('#tableOne').append(
-                        "<tr><th>" + fishList[i].fishName + "</th>" +
-                        "<td>" + fishList[i].fishLoc + "</td>" +
-                        "<td>" + fishList[i].fishTime + "</td>" +
-                        "<td>" + fishList[i].fishAvbl + "</td>" +
+
+            masterList = fishList;        
+
+            console.log("Master Fish List: ", masterList);
+
+
+
+            $("button").on("click", function(){
+                btnVal = $(this).val();
+                crntMonth = $(this).text();
+                console.log(btnVal);
+                console.log(crntMonth);
+                monthSelect(btnVal);
+            });
+
+            function outputTable(tableId, month) {
+                console.log(month);
+                console.log(/*"filter result " + */filterResult);
+                for(var i=0; i < filterResult.length; i++){
+                    $('#table' + tableId).append(
+                        "<tr><th>" + filterResult[i].fishName + "</th>" +
+                        "<td>" + filterResult[i].fishLoc + "</td>" +
+                        "<td>" + filterResult[i].fishTime + "</td>" +
+                        "<td>" + filterResult[i].fishAvbl + "</td>" +
                         "</tr>"
                     );
                 }
-            
-                var monthSelection;
-            
-                var filterResult;
+                if(month === "Jan"){ $("#tableTwo").css("border", "solid 3px #A3BFD9")};
+                if(month === "Feb"){ $("#tableTwo").css("border", "solid 3px #F299B1")};
+                if(month === "Mar"){ $("#tableTwo").css("border", "solid 3px #7BB599")};
+                if(month === "Apr"){ $("#tableTwo").css("border", "solid 3px #0A909B")};
+                if(month === "May"){ $("#tableTwo").css("border", "solid 3px #FFE877")};
+                if(month === "Jun"){ $("#tableTwo").css("border", "solid 3px #CF4404")};
+                if(month === "Jul"){ $("#tableTwo").css("border", "solid 3px #F24C3D")};
+                if(month === "Aug"){ $("#tableTwo").css("border", "solid 3px #A2CE6F")};
+                if(month === "Sept"){ $("#tableTwo").css("border", "solid 3px #F2B680")};
+                if(month === "Oct"){ $("#tableTwo").css("border", "solid 3px #FF6302")};
+                if(month === "Nov"){ $("#tableTwo").css("border", "solid 3px #CFBACE")};
+                if(month === "Dec"){ $("#tableTwo").css("border", "solid 3px #D93636")};
+            }
 
-                function monthFunc(){
+            function monthSelect(month) {
 
-                    if($("#tableTwo").children().length > 0){
+                $("#titleOutput").text(crntMonth);
 
-                        $("#tableTwo").empty();
-                        
-                        delete filterResult;
-                    }
+                if($("#tableTwo").children().length > 0){
 
-                    //var filterResult;
+                    $("#tableTwo").empty();
 
-                    function outputTable(){
-
-                        for(var i=0; i < filterResult.length; i++){
-                            $('#tableTwo').append(
-                                "<tr><th>" + filterResult[i].fishName + "</th>" +
-                                "<td>" + filterResult[i].fishLoc + "</td>" +
-                                "<td>" + filterResult[i].fishTime + "</td>" +
-                                "<td>" + filterResult[i].fishAvbl + "</td>" +
-                                "</tr>"
-                            );
-                        }
-
-                        if(monthSelection == "Jan"){ $("#tableTwo").css("background-color", "skyblue")}
-
-                    }
-
-                    if($("button").val() == "Jan"){
-                        
-                        filterResult = fishList.filter(x => x.fishAvblEx.includes("Jan"));
-
-
-                        console.log(filterResult);
-
-                        outputTable();
-                        
-                    }
-
+                    delete filterResult;
                 }
-                    
-                
+
+                filterResult = fishList.filter(x => x.fishAvblEx.includes(month));
+
+                console.log(filterResult);
+
+                outputTable("Two", month);
+            }
             
         </script>
         
