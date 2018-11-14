@@ -42,6 +42,24 @@
                             border-collapse: collapse;
                         }
                 
+                            #tableTwo tr:nth-child(1) {
+                                /*transition: 0.2s all;*/;
+                                animation: fadeIn 2s;
+                            }
+                
+                                @keyframes fadeIn {
+                                    
+                                    0% {
+                                        opacity: 0;
+                                        height: 0px;
+                                    }
+                                    
+                                    100% {
+                                        opacity: 1;
+                                        height: 33px;
+                                    }
+                                }
+                
                             th, td {
                                 border: 1px solid black;
                                 padding: 8px 4px;
@@ -96,6 +114,28 @@
         <!--<button type="button" value="Jan">January</button>-->
         <button type="button" value="Feb">February</button>
         
+        <button type="button" value="Mar">March</button>
+        
+        <button type="button" value="Apr">April</button>
+        
+        <button type="button" value="May">May</button>
+        
+        <button type="button" value="Jun">June</button>
+        
+        <button type="button" value="Jul">July</button>
+        
+        <button type="button" value="Aug">August</button>
+        
+        <button type="button" value="Sept">September</button>
+        
+        <button type="button" value="Oct">October</button>
+        
+        <button type="button" value="Nov">November</button>
+        
+        <button type="button" value="Dec">December</button>
+        
+        
+        
         <table id="tableTwo"></table>
         
         <table id="tableOne">
@@ -118,12 +158,15 @@
             
                 
                         
-                    filterResult = undefined;
-                    console.log(filterResult);
+                    //filterResult = undefined;
+                    //console.log(filterResult);
             
                     $("button").on("click", function(){
-                        if($(this).val() == "Jan"){ monthSelect("Jan"); };
-                        if($(this).val() == "Feb"){ monthSelect("Feb"); };
+                        btnVal = $(this).val();
+                        console.log(btnVal);
+                        monthSelect(btnVal);
+                        //if($(this).val() == "Jan"){ monthSelect("Jan"); };
+                        //if($(this).val() == "Feb"){ monthSelect("Feb"); };
                     });
 
                     function outputTable(tableId, month) {
@@ -138,8 +181,18 @@
                                 "</tr>"
                             );
                         }
-                        if(month === "Jan"){ $("#tableTwo").css("background-color", "skyblue")};
-                        if(month === "Feb"){ $("#tableTwo").css("background-color", "pink")};
+                        if(month === "Jan"){ $("#tableTwo").css("background-color", "#A3BFD9")};
+                        if(month === "Feb"){ $("#tableTwo").css("background-color", "#F299B1")};
+                        if(month === "Mar"){ $("#tableTwo").css("background-color", "#7BB599")};
+                        if(month === "Apr"){ $("#tableTwo").css("background-color", "#0A909B")};
+                        if(month === "May"){ $("#tableTwo").css("background-color", "#FFE877")};
+                        if(month === "Jun"){ $("#tableTwo").css("background-color", "#CF4404")};
+                        if(month === "Jul"){ $("#tableTwo").css("background-color", "#F24C3D")};
+                        if(month === "Aug"){ $("#tableTwo").css("background-color", "#A2CE6F")};
+                        if(month === "Sept"){ $("#tableTwo").css("background-color", "#F2B680")};
+                        if(month === "Oct"){ $("#tableTwo").css("background-color", "#FF6302")};
+                        if(month === "Nov"){ $("#tableTwo").css("background-color", "#CFBACE")};
+                        if(month === "Dec"){ $("#tableTwo").css("background-color", "#D93636")};
                     }
 
                     function monthSelect(month) {
