@@ -8,7 +8,7 @@ A month by month guide for fishing in Animal Crossing: Wild World
 #### Demo Update
 ###### **Posted 11/19/18 - 3:21 p.m.**
 
-The demo has been updated with the new content border for the link to here: https://codepen.io/ElecRei/pen/wQgELQ
+The demo has been updated with the new content border for the link to here: <a href="https://codepen.io/ElecRei/pen/wQgELQ" target="_blank">https://codepen.io/ElecRei/pen/wQgELQ</a>
 
 #### Project Update
 ###### **Posted 11/19/18 - 10:33 a.m.**
