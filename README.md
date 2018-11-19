@@ -6,7 +6,14 @@ A month by month guide for fishing in Animal Crossing: Wild World
 ### News
 
 #### Project Update
-###### **Posted 11/19/18**
+###### **Posted 11/19/18 - 3:21 p.m.**
+
+Started to work on the border today for the table and potential content containers. For the former I might try to make the border match the fish catalogue screen in Wild World and the latter will be for either divs that contain content to look like Wild World speech balloons.
+
+I'm hoping to get finished an updated codepen with the borders included today, so fingers crossed!
+
+#### Project Update
+###### **Posted 11/19/18 - 10:33 a.m.**
 
 Started to work on the border today for the table and potential content containers. For the former I might try to make the border match the fish catalogue screen in Wild World and the latter will be for either divs that contain content to look like Wild World speech balloons.
 
