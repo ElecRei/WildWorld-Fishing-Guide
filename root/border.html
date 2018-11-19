@@ -58,13 +58,32 @@
                     /* PAGE STYLING 
                     ============= */
                     
-                        #tableOne {
-                            background: orange;
+                        .myBorder {
+                            border: double orange 1em;
+                            border-image: url(imgs/border-test.png) 27 round stretch;
+                            
+                            width: 12em;
+                            height: 5em;
                         }
                 
-                        #tableTwo {
-                            background: skyblue;
+                        .myBorder2 {
+                            background: #ff7f27;
+                            border: double orange 1em;
+                            border-image: url(imgs/border-test-2.png) 52 64 stretch;
+                            
+                            width: 12em;
+                            height: 5em;
+                            position: relative;
                         }
+                
+                            .myBorder2 div {
+                                    background: white;
+                                    position: absolute;
+                                    top: 15%;
+                                    left: 4.5%;
+                                    padding: 10px;
+                                    border-radius: 3px;
+                            }
                     
                     /* ========== */
                     
@@ -88,7 +107,15 @@
     
     <body>
         
+        <div class="myBorder">
+            
+        </div>
         
+        <div class="myBorder2">
+            <div>
+                <p>This is a paragraph.</p>
+            </div>
+        </div>
         
     </body>
     
