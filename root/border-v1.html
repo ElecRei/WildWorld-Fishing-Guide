@@ -42,6 +42,10 @@
                             font-family: 'Open Sans', sans-serif;
                         }
                 
+                        body {
+                            background: url(imgs/cloud-bg.jpg) repeat;
+                        }
+                
                         table {
                             border-collapse: collapse;
                         }
@@ -61,100 +65,21 @@
                     
                     /* PAGE STYLING 
                     ============= */
-                    
-                        .myBorder {
-                            border: double orange 1em;
-                            border-image: url(imgs/border-test.png) 27 round stretch;
-                            
-                            width: 12em;
-                            height: 5em;
-                        }
-                
-                        .myBorder2 {
-                            background: #ff7f27;
-                            border: double orange 1em;
-                            border-image: url(imgs/border-test-2.png) 52 64 stretch;
-                            
-                            width: 12em;
-                            height: 5em;
-                            position: relative;
-                        }
-                
-                            .myBorder2 div {
-                                    background: white;
-                                    position: absolute;
-                                    top: 15%;
-                                    left: 4.5%;
-                                    padding: 10px;
-                                    border-radius: 3px;
-                            }
-                
-                        .myBorder3 {
-                            border: double orange 1em;
-                            border-image: url(imgs/border-test-3.png) 20% 12% 30% 8% stretch stretch;
-                            
-                            width: 12em;
-                            height: 5em;
-                        }
-                
-                        .myBorder4 {
-                            border: double orange 1em;
-                            /*border-image: url(imgs/acww-dialogue-balloons.png) 26 43 20 43 stretch stretch;*/
-                            border-image: url(imgs/acww-dialogue-balloons-02.svg) 26 43 20 43 stretch stretch;
-                            border-image-width: auto;
-                            
-                            width: 500px;
-                            height: 300px;
-                        }
-                
-                        .myBorder5 {
-                            border: double orange 1em;
-                            border-image: url(imgs/acww-dialogue-balloons-03.svg) 26 43 20 43 stretch stretch;
-                            border-image-width: auto;
-                            
-                            width: 237px;
-                            height: 74px;
-                        }
-                
-                            .myBorder5 .content {
-                                padding: 12px;
-                            }
                 
                         .pseudoBorder {
-                            background: url(imgs/acww-dialogue-balloons-03.svg) no-repeat;
-                            background-size: 100%;
-                            
-                            width: auto;
-                            height: auto;
-                        }
-                
-                            .pseudoBorder .content {
-                                padding: 12px;
-                            }
-                
-                        .pseudoBorder2 {
-                            background: url(imgs/acww-dialogue-balloons-06.svg) no-repeat;
-                            background-size: 100%;
-                            
-                            width: 800px;
-                            height: 250px;
-                        }
-                
-                            .pseudoBorder2 .content {
-                                padding: 12px;
-                            }
-                
-                        .pseudoBorder3 {
-                                border: double orange 1em;
+                                border: solid #BBB .5em;
+                                border-radius: 12px;
                                 border-image: url(imgs/acww-dialogue-balloons-06.svg) 25% stretch stretch;
                                 border-image-width: auto;
+                                border-radius: 0px;
                             
                                 width: 800px;
                                 height: 250px;
                                 position: relative;
                         }
                 
-                            .pseudoBorder3 .content {
+                            .pseudoBorder .content {
+                                background: #FFF;
                                 color: #4b4b4b;
                                 font-size: 1.5em;
                                 
@@ -186,45 +111,7 @@
     
     <body>
         
-        <div class="myBorder">
-            
-        </div>
-        
-        <div class="myBorder2">
-            <div>
-                <p>This is a paragraph.</p>
-            </div>
-        </div>
-        
-        <div class="myBorder3">
-            
-        </div>
-        
-        <div class="myBorder4">
-            <div class="content">
-                <p>Welcome to the world of Animal Crossing!</p>
-            </div>
-        </div>
-        
-        <div class="myBorder5">
-            <div class="content">
-                <p>Welcome to the world of Animal Crossing!</p>
-            </div>
-        </div>
-        
         <div class="pseudoBorder">
-            <div class="content">
-                <p>Welcome to the world of Animal Crossing!</p>
-            </div>
-        </div>
-        
-        <div class="pseudoBorder2">
-            <div class="content">
-                <p>Welcome to the world of Animal Crossing!</p>
-            </div>
-        </div>
-        
-        <div class="pseudoBorder3">
             <div class="content">
                 <p>Welcome to the world of Animal Crossing!</p>
                 <hr>
